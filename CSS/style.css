@@ -1,0 +1,119 @@
+body {
+  background-color: #BF896B;
+  height: 1200px;
+}
+
+/* Nav bar */
+
+
+#row {
+  background-color: #FFF7DE;
+  flex-direction: row;
+}
+ 
+.navigation {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+a {
+  background-color: #FFF7DE;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    font-family: 'Sunflare';
+    text-decoration: none;
+    color:#BF896B ;
+}
+
+.logo {
+  color: #BF896B;
+  font-family: 'Crushed';
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+/* hero image, name, title */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.text-block {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+h1 {
+  font-size: 150px;
+  font-family: 'Crushed';
+  color: #FFF7DE;
+  margin: 0%;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: 'crushed';
+  color: #FFF7DE;
+  margin: 2px;
+}
+
+
+/* about section */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 10%;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: 'Sunflare';
+  color: #FFF7DE;
+}
+
+p {
+  font-size: 20px;
+  font-family:'Inter';
+  font-style: italic;
+  font-weight: light;
+  color: #FFF7DE;
+  margin-bottom: 20px;
+}
+
+ button {
+  width: 110px;
+  border-radius: 10px;
+  border: none;
+  color: #BF896B;
+  background-color: #FFF7DE;
+  font-family: 'Sunflare';
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
+}
+
+
+/*footer*/
+
+footer {
+  background-color: #BF896B;
+  margin-left: auto;
+}
+
+.footerButtons {
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly;
+      margin-left: 10%;
+      margin-right: 10%; 
+}

@@ -13,6 +13,7 @@ body {
  
 .navigation {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 10px;
   padding-right: 10px;
   justify-content: space-between;
@@ -43,7 +44,7 @@ a {
 .container {
   display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-content: end;
   padding-right: 5%;
   padding-left: 5%;
 }
@@ -70,6 +71,7 @@ h2 {
 
 .content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding-right: 5%;
   padding-left: 5%;
@@ -103,17 +105,252 @@ p {
 }
 
 
+/* skills/tools section */
+
+
+.skills {
+  flex-direction: row;
+  color: #FFF7DE;
+  font-family: 'Inter';
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 10%;
+}
+
+
+h5 {
+  align-content: start;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+li {
+  font-size: 18px;
+  width: 200px;
+  font-weight: light;
+  font-style: italic;
+}
+
+.Tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-bottom: 30px;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.toolSection {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.skillSection {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* case studies section/grid section  */
+
+.caseStudies {
+    margin-bottom: 30px;
+    padding-bottom: 10%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.workGrid {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  row-gap: 30px;
+  justify-content: center;
+  grid-template-areas:
+  "ISCProto ISCdescription"
+  "revelrydescription RevelryProto"
+  "AbbeyCatsProto AbbeyCatsdescription";
+}
+
+#ISCProto {
+  grid-area: ISCProto;
+  align-content: center;
+}
+
+#ISCdescription {
+  grid-area: ISCdescription;
+  align-content: center;
+ 
+}
+
+#revelrydescription {
+  grid-area: revelrydescription;
+  align-content: center;
+  padding-right: 10%;
+}
+
+#RevelryProto {
+  grid-area: revelryProto;
+  align-content: center;
+  
+}
+
+
+#AbbeyCatsProto {
+  grid-area: AbbeycatsProto;
+  align-content: center;
+}
+
+#AbbeyCatsdescription {
+  grid-area: AbbeyCatsdescription;
+  align-content: center;
+}
+
+h7 {
+  font-family: 'Inter';
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFF7DE;
+}
+
+
+h6{ 
+  font-family: 'Inter';
+  font-weight: light;
+  font-size: 14px;
+  font-style: italic;
+  color: #FFF7DE;
+}
+
+
+
+
+
 /*footer*/
 
 footer {
-  background-color: #BF896B;
-  margin-left: auto;
+  background-color: #d69979;
+  margin: auto;
+  height: 100px;
+  align-content: center;
 }
 
 .footerButtons {
       display: flex;
+      flex-wrap: wrap;
       align-content: center;
       justify-content: space-evenly;
       margin-left: 10%;
       margin-right: 10%; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .navigation {
+    display: flex;
+  }
+  .navLinks {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .navigation {
+    display: flex;
+    flex-wrap: wrap;
+    height: 150px;
+  }
+  
+  a{
+    font-size: 14px;
+    align-content: center;
+    justify-content: center;
+  }
+  .text-block {
+    position: static;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+  h2{
+    font-size: 16px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+  p{
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  .workGrid {
+    padding: 10%;
+    margin-bottom: 5%;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ISCProto"
+      "ISCdescription"
+      "RevelryProto"
+      "revelrydescription"
+      "AbbeyCatsProto"
+      "AbbeyCatsdescription"
+    ;
+  }
+
+  #ISCProto, #AbbeyCatsProto {
+    width: 250px;
+  }
+  
+  #RevelryProto {
+    width: 150px;
+  }
+
+  .footerButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+  }
+
+  footer {
+    height: 350px;
+  }
+
+  .Tools {
+    row-gap: 10px;
+  }
+
+  h7, h6  {
+    font-size: 16px;
+  }
+
 }

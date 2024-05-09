@@ -29,24 +29,18 @@ a {
     font-family: 'Sunflare';
     text-decoration: none;
     color:#BF896B ;
-    transition: all .3s ease-in-out;
+  
 }
 
-a:hover {
-  color:#654838;
- }
 
 .logo {
   color: #BF896B;
   font-family: 'Crushed';
   font-size: 20px;
   padding: 10px;
-  transition: all .3s ease-in-out;
+  
 }
 
-.logo:hover{
-  color:#654838;
-}
 
 
 
@@ -114,16 +108,10 @@ p {
   font-family: 'Sunflare';
   padding: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0, 0.2);
-  transition: all .4s ease-in-out;
+  
 }
 
-/*button hover state*/
 
-button:hover {
-  background-color:#966b54;
-  color: #FFF7DE;
- 
- }
 
 /* skills/tools section */
 
